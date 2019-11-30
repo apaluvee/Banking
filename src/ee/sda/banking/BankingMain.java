@@ -128,7 +128,7 @@ public class BankingMain {
 
         System.out.println("Current money in Euros: " + debitAccount.getAmount());
         try {
-            debitAccount.withdraw(323, Currency.EUR);
+            debitAccount.withdraw(324, Currency.EUR);
             System.out.println("Current money in Euros: " + debitAccount.getAmount());
         } catch (WithdrawException e) {
             System.out.println(e.getMessage());

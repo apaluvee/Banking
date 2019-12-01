@@ -49,7 +49,7 @@ public class DebitAccount {
         if (status.canWithdraw()) {
             amount = amount - amountToWithdraw;
             if (amount < 0) {
-                throw new WithdrawException("Can't withdraw.");
+                throw new WithdrawException("Can't withdraw: " + amountToWithdraw + ". Balance will be: " + amount + ".");
             }
             return;
         }
